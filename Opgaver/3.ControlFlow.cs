@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Specialized;
 
 namespace Opgaver
 {
@@ -27,12 +28,43 @@ namespace Opgaver
                 "Lav et program som tjekker om en given værdi er højere eller lavere end 18"
             );
             // Lav opgaven herunder!
+            string input = Console.ReadLine();
+
+            int number = int.Parse(input);
+            if (number < 18)
+            {
+                Console.WriteLine("Tallet er mindre end 18");
+            }
+            else if (number > 18)
+            {
+                Console.WriteLine("Tallet er større end 18");
+            }
+            else
+            {
+                Console.WriteLine("Tallet er 18");
+            }
         }
 
         public static void If2()
         {
             Console.WriteLine("Lav et program som tjekker om en given værdi er lige eller ulige");
             // Lav opgaven herunder!
+            string userInput = Console.ReadLine();
+
+            int number = int.Parse(userInput);
+
+            switch (number % 2)
+            {
+                case 0:
+                    Console.WriteLine("Lige");
+                    break;
+                case 1:
+                    Console.WriteLine("Ulige");
+                    break;
+                default:
+                    Console.WriteLine("Det gik noget galt!!");
+                    break;
+            }
         }
 
         public static void Switch1()
@@ -45,6 +77,10 @@ namespace Opgaver
         {
             Console.WriteLine("Lav et program som tjekker om en given værdi er lige eller ulige");
             // Lav opgaven herunder!
+            string userInput = Console.ReadLine();
+            int number = int.Parse(userInput);
+            string result = (number % 2 == 0) ? "Lige" : "Ulige";
+            Console.WriteLine(result);
         }
 
         public static void MiniProjektQuiz()
@@ -71,6 +107,7 @@ namespace Opgaver
             Console.WriteLine(
                 "Lav et program, hvor brugeren indtaster en karakter (fx 12, 10, 7, 4, 02, 00 eller -3)."
             );
+            Console.WriteLine("Programmet skal herefter give feedback baseret på karakteren.");
             Console.WriteLine(
                 @"Programmet skal give en passende feedback baseret på karakteren, 
             fx 'Super flot!', 'Godt klaret', 'Du kan gøre det bedre' osv."
@@ -82,6 +119,39 @@ namespace Opgaver
             for en bruger og man regner gennemsnittet ud."
             );
             // Lav opgaven herunder!
+            Console.WriteLine("Indtast karakter (12, 10, 7, 4, 02, 00 eller -3):");
+            string input = Console.ReadLine() ?? "0";
+            int karakter = int.Parse(input);
+            string feedback;
+            switch (karakter)
+            {
+                case 12:
+                    feedback = "Super flot!";
+                    break;
+                case 10:
+                    feedback = "Godt klaret";
+                    break;
+                case 7:
+                    feedback = "Du kan gøre det bedre";
+                    break;
+                case 4:
+                    feedback = "Du skal øve dig mere";
+                    break;
+                case 2:
+                    feedback = "Du skal virkelig øve dig mere";
+                    break;
+                case 0:
+                    feedback = "Du dumpede desværre";
+                    break;
+                case -3:
+                    feedback = "Du dumper helt sikkert";
+                    break;
+                default:
+                    feedback = "Ugyldig karakter";
+                    break;
+                    
+            }
+            Console.WriteLine($"Feedback: {feedback}");
         }
     }
 }

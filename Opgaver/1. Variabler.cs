@@ -24,8 +24,8 @@
             Console.WriteLine("Lav en variabel af typen int og tildel den en værdi af ti!");
             Console.WriteLine("Udskriv variablen til konsollen.");
             // Lav opgaven herunder! 
-            int number = 10;
-            Console.WriteLine(number);
+            int MyNumber = 10;
+            Console.WriteLine(MyNumber);
 
         }
 
@@ -35,7 +35,8 @@
             Console.WriteLine("Lav en variabel af typen double og tildel den en værdi komma (decimal) værdi af 5 og en 1/4");
             Console.WriteLine("Udskriv variablen til konsollen.");
             // Lav opgaven herunder!
-
+            double MyDouble = 5.25;
+            Console.WriteLine(MyDouble);
         }
 
         public static void Strings1()
@@ -44,6 +45,8 @@
             Console.WriteLine("Lav en variabel af typen string og tildel den en værdi - den skal indeholde teksten 'Hello, World' med et udråbstegn til sidst!");
             Console.WriteLine("Udskriv variablen til konsollen.");
             // Lav opgaven herunder!
+            string MyString = "Hello, World!";
+            Console.WriteLine(MyString);
         }
 
         public static void Bool1()
@@ -52,7 +55,8 @@
             Console.WriteLine("Lav en variabel af typen bool og tildel den en sandhedsværdi (true/false).");
             Console.WriteLine("Udskriv variablen til konsollen.");
             // Lav opgaven herunder!
-
+            bool isReady = true;
+            Console.WriteLine(isReady);
         }
 
 
@@ -62,6 +66,9 @@
             Console.WriteLine("Lav to string variabeler og udskriv dem ved brug af string interpolation.");
             Console.WriteLine("De skal være 'Hello, ' og 'World!'");
             // Lav opgaven herunder!
+            string part1 = "Hello, ";
+            string part2 = "World!";
+            Console.WriteLine($"{part1}{part2}");
         }
 
         public static void StringInterpolation2()
@@ -70,9 +77,9 @@
             Console.WriteLine("Her er fire forskellige strenge. Din opgave er at kombinere dem til én sætning ved brug af string interpolation!");
             Console.WriteLine("Strengene er: ");
             string del1 = "Hej";
-            string del4 = "med";
+            string del2 = "med";
             string del3 = "dig";
-            string del2 = "!";
+            string del4 = "!";
             Console.WriteLine($"del1: {del1}");
             Console.WriteLine($"del2: {del2}");
             Console.WriteLine($"del3: {del3}");
@@ -81,6 +88,7 @@
 
             // Løsning med string interpolation
             
+            Console.WriteLine($"{del1} {del2} {del3}{del4}");
         }
 
         public static void Float1()
