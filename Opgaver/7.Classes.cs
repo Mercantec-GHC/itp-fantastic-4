@@ -1,5 +1,3 @@
-using System;
-
 namespace Opgaver
 {
     public class Classes

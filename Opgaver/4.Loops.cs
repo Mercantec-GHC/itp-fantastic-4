@@ -1,5 +1,3 @@
-using System;
-
 namespace Opgaver
 {
     public class Loops
@@ -8,8 +6,8 @@ namespace Opgaver
         {
             Console.WriteLine("------------------------------------------");
             Console.WriteLine("Velkommen til opgaver omkring Loops både med og uden datastrukturer!");
-            Loop1();
-            Loop2();
+           // Loop1();
+           // Loop2();
             Loop3();
             Loop4();
             Loop5();
@@ -27,13 +25,22 @@ namespace Opgaver
             Console.WriteLine("Opgave 1:");
             Console.WriteLine("Brug et loop til at udskrive tallene fra 1 til 10.");
             // Lav opgaven herunder!
+            for (int i = 1; i <= 10; i++)
+            {
+                Console.WriteLine(i);
+            }
         }
 
         public static void Loop2()
         {
             Console.WriteLine("Opgave 2:");
             Console.WriteLine("Brug et loop og en if-betingelse til at udskrive alle lige tal fra 2 til 20.");
-            // Lav opgaven herunder!
+            // Lav opgaven herunder!  Нолики единички пакетики рукопожатия кабинет ректора рукопожатие
+
+            for (int i = 2; i <= 20; i += 2)
+            {
+                Console.WriteLine(i);
+            }
         }
 
         public static void Loop3()
@@ -41,6 +48,13 @@ namespace Opgaver
             Console.WriteLine("Opgave 3:");
             Console.WriteLine("Brug et loop til at lægge alle tal fra 1 til 100 sammen og udskriv resultatet.");
             // Lav opgaven herunder!
+            int sum = 0;
+            for (int i = 1; i <= 100; i++)
+            {
+                sum += i;
+            }
+            Console.WriteLine($"Summen af tal fra 1 til 100 er: {sum}");
+
         }
 
         public static void Loop4()
@@ -48,6 +62,7 @@ namespace Opgaver
             Console.WriteLine("Opgave 4:");
             Console.WriteLine("Bed brugeren om at indtaste sit navn og et tal. Udskriv navnet det antal gange ved hjælp af et loop.");
             // Lav opgaven herunder!
+
         }
 
         public static void Loop5()

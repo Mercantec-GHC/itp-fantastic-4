@@ -80,7 +80,7 @@
             Console.WriteLine("Kombiner dem nu til én sætning:");
 
             // Løsning med string interpolation
-            
+
         }
 
         public static void Float1()
