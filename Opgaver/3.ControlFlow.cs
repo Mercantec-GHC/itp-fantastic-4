@@ -28,7 +28,7 @@ namespace Opgaver
                 "Lav et program som tjekker om en given værdi er højere eller lavere end 18"
             );
             // Lav opgaven herunder!
-            string input = Console.ReadLine();
+            string input = Console.ReadLine() ?? "0";
 
             int number = int.Parse(input);
             if (number < 18)
@@ -49,8 +49,7 @@ namespace Opgaver
         {
             Console.WriteLine("Lav et program som tjekker om en given værdi er lige eller ulige");
             // Lav opgaven herunder!
-            string userInput = Console.ReadLine();
-
+            string userInput = Console.ReadLine() ?? "0";
             int number = int.Parse(userInput);
 
             switch (number % 2)
@@ -77,7 +76,7 @@ namespace Opgaver
         {
             Console.WriteLine("Lav et program som tjekker om en given værdi er lige eller ulige");
             // Lav opgaven herunder!
-            string userInput = Console.ReadLine();
+            string userInput = Console.ReadLine() ?? "0";
             int number = int.Parse(userInput);
             string result = (number % 2 == 0) ? "Lige" : "Ulige";
             Console.WriteLine(result);
