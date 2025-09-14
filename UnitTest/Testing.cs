@@ -3,6 +3,7 @@ using System.Globalization;
 using System.IO;
 using NUnit.Framework;
 using Opgaver;
+using Opgaver.Indputs;
 
 namespace UnitTest
 {
@@ -135,7 +136,7 @@ namespace UnitTest
     public class TestsOfIndputs
     {
         private StringWriter stringWriter;
-        private StringReader stringReader;
+        private StringReader? stringReader;
 
         [SetUp]
         public void Setup()
@@ -156,7 +157,7 @@ namespace UnitTest
         {
             stringReader = new StringReader("Hello, World!");
             Console.SetIn(stringReader);
-            Opgaver.Indputs.String1();
+            Indputs.String1();
             string output = stringWriter.ToString();
             Assert.IsTrue(
                 output.Contains(
@@ -172,7 +173,7 @@ namespace UnitTest
         {
             stringReader = new StringReader("42");
             Console.SetIn(stringReader);
-            Opgaver.Indputs.Int1();
+            Indputs.Int1();
             string output = stringWriter.ToString();
             Assert.IsTrue(
                 output.Contains(
@@ -188,7 +189,7 @@ namespace UnitTest
         {
             stringReader = new StringReader("3,14");
             Console.SetIn(stringReader);
-            Opgaver.Indputs.Double1();
+            Indputs.Double1();
             string output = stringWriter.ToString();
             Assert.IsTrue(
                 output.Contains(
@@ -204,7 +205,7 @@ namespace UnitTest
         {
             stringReader = new StringReader("true");
             Console.SetIn(stringReader);
-            Opgaver.Indputs.Bool1();
+            Indputs.Bool1();
             string output = stringWriter.ToString();
             Assert.IsTrue(
                 output.Contains(
