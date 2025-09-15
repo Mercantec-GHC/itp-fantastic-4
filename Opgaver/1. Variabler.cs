@@ -111,6 +111,7 @@ namespace Opgaver
             // Lav opgaven herunder!
 
             Console.WriteLine('A');
+            Console.WriteLine();
         }
 
         public static void Decimal1()
