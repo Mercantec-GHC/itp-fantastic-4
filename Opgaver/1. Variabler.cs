@@ -109,6 +109,8 @@ namespace Opgaver
             Console.WriteLine("Lav en variabel af typen char og tildel den en værdi af det første bogstav i alfabetet (Det skal være stort!)");
             Console.WriteLine("Udskriv variablen til konsollen.");
             // Lav opgaven herunder!
+
+            Console.WriteLine('A');
         }
 
         public static void Decimal1()
