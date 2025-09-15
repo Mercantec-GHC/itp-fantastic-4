@@ -112,6 +112,7 @@ namespace Opgaver
 
             Console.WriteLine('A');
             Console.WriteLine();
+            Console.WriteLine("------------------------------------------");
         }
 
         public static void Decimal1()
