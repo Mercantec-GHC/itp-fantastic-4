@@ -1,4 +1,6 @@
-﻿namespace Opgaver
+﻿using System.Net.WebSockets;
+
+namespace Opgaver
 {
     public class Variabler
     {
@@ -97,6 +99,8 @@
             Console.WriteLine("Lav en variabel af typen float og tildel den en værdi af 3 + 0.14");
             Console.WriteLine("Udskriv variablen til konsollen.");
             // Lav opgaven herunder!
+
+            Console.WriteLine(3 + 0.14f);
         }
 
         public static void Char1()
