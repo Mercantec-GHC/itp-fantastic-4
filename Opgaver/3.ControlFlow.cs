@@ -108,7 +108,6 @@ namespace Opgaver
             for en bruger og man regner gennemsnittet ud."
             );
             // Lav opgaven herunder!
-            // Lav opgaven herunder!
             Console.Write("Indtast en karakter: ");
             int karakter = int.Parse(Console.ReadLine());
 

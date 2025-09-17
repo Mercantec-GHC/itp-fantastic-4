@@ -6,8 +6,8 @@ namespace Opgaver
         {
             Console.WriteLine("------------------------------------------");
             Console.WriteLine("Velkommen til opgaver omkring Loops både med og uden datastrukturer!");
-           // Loop1();
-           // Loop2();
+           Loop1();
+            Loop2();
             Loop3();
             Loop4();
             Loop5();
@@ -48,12 +48,10 @@ namespace Opgaver
             Console.WriteLine("Opgave 3:");
             Console.WriteLine("Brug et loop til at lægge alle tal fra 1 til 100 sammen og udskriv resultatet.");
             // Lav opgaven herunder!
-            int sum = 0;
-            for (int i = 1; i <= 100; i++)
-            {
-                sum += i;
-            }
-            Console.WriteLine($"Summen af tal fra 1 til 100 er: {sum}");
+            int n = 100;
+            int sum = n * (1 + n) / 2;
+
+            Console.WriteLine($"Summen af alle tallene er {sum}");
 
         }
 
@@ -62,7 +60,16 @@ namespace Opgaver
             Console.WriteLine("Opgave 4:");
             Console.WriteLine("Bed brugeren om at indtaste sit navn og et tal. Udskriv navnet det antal gange ved hjælp af et loop.");
             // Lav opgaven herunder!
+            Console.Write("type ur name: ");
+            string name = Console.ReadLine();
 
+            Console.Write("ur number: ");
+            int antal = int.Parse(Console.ReadLine());
+
+            for (int i = 1; i <= antal; i++)
+            {
+                Console.WriteLine($"{i}: {name}");
+            }
         }
 
         public static void Loop5()
@@ -70,6 +77,7 @@ namespace Opgaver
             Console.WriteLine("Opgave 5:");
             Console.WriteLine("Bed brugeren om at indtaste et tal. Brug et loop til at udskrive alle tal fra det indtastede tal og ned til 1.");
             // Lav opgaven herunder!
+
         }
 
         public static void Loop6()
