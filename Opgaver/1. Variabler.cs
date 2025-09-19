@@ -121,6 +121,10 @@ namespace Opgaver
             Console.WriteLine("Lav en variabel af typen decimal og tildel den en værdi af 100 og en halv");
             Console.WriteLine("Udskriv variablen til konsollen.");
             // Lav opgaven herunder!
+            decimal myDecimal = 100.5m;
+            Console.WriteLine(myDecimal);
+            Console.WriteLine();
+            Console.WriteLine("------------------------------------------");
         }
     }
 }
